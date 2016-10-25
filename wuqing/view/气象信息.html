@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>气象信息</title>
+
+		<script type="text/javascript" src="../js/echarts.js"></script>
+		<!--时间-->
+		<link href="../css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="../css/jasny-bootstrap.min.css" rel="stylesheet">
+		<link href="../css/datepicker3.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="工作.html"></a>
+			<h1 class="mui-title">气象信息</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view m-b2">
+				<li class="mui-table-view-cell">
+					<div class="form-group m-b" id="data_5">
+						<label>起止时间</label>
+						<div class="input-daterange input-group input-ts" id="datepicker">
+							<input type="text" class="input-sm form-control" name="start" value="2016-9-26" />
+							<span class="input-group-addon">到</span>
+							<input type="text" class="input-sm form-control" name="end" value="2016-9-27" />
+						</div>
+					</div>
+					<div class="mui-pull-right">
+						<input type="button" value="查询" class="btn-content">
+					</div>
+				</li>
+				</ul>
+			<script type="text/javascript">
+				window.onload = function(){
+					document.getElementById("datepicker").getElementsByTagName("input").item(1).onclick = function(){
+						$(".datepicker").addClass("input-name");
+					}
+				}
+			</script>
+			<div class="zntf-content m-b2">
+				<div class="mui-table-view-cell">
+					<div class="qxbox-width wdbox">
+						<div class="wdts">
+							13°~21°
+						</div>
+					</div>
+					<div class="qxbox-width">
+						<div class="qxbox-width2">
+							<i class="ico-font">&#xe606;</i>
+							<p>1000MM</p>
+						</div>
+						<div class="qxbox-width2">
+							<i class="ico-font">&#xe608;</i>
+							<p>100</p>
+						</div>
+						<div class="qxbox-width2">
+							<i class="ico-font">&#xe609;</i>
+							<p>375kpa</p>
+						</div>
+						<div class="qxbox-width2">
+							<i class="ico-font">&#xe611;</i>
+							<p>西南风2~3级</p>
+						</div>
+					</div>
+					<p class="f-r qxts">2016-9-28 01:02:03</p>
+				</div>
+			</div>
+			<div class="zntf-content">
+				<div class="mui-table-view-cell">
+					<div id="main" style="width: 100%;height: 400px;"></div>
+					<script type="text/javascript">
+						// 基于准备好的dom，初始化echarts实例
+						var myChart = echarts.init(document.getElementById('main'));
+
+						// 指定图表的配置项和数据
+						//app.title = '堆叠柱状图';
+
+						option = {
+							title: {
+								text: '公网气象值'
+							},
+							tooltip: {
+								trigger: 'axis'
+							},
+							legend: {
+								data:['最高温','最低温']
+							},
+							grid: {
+								left: '3%',
+								right: '4%',
+								bottom: '3%',
+								containLabel: true
+							},
+							xAxis: {
+								type: 'category',
+								boundaryGap: false,
+								data: ['周一','周二','周三','周四','周五','周六','周日']
+							},
+							yAxis: {
+								type: 'value',
+								min: 0,
+								max: 40,
+								axisLabel: {
+									formatter: '{value} ℃'
+								},
+							},
+							series: [
+								{
+									name:'最高温',
+									type:'line',
+									data:[20, 20, 20, 20, 20, 20, 20]
+								},
+								{
+									name:'最低温',
+									type:'line',
+									data:[10, 10, 10, 10, 10, 10, 10]
+								}
+							]
+						};
+
+
+
+						// 使用刚指定的配置项和数据显示图表。
+						myChart.setOption(option);
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<a href="工作.html">
+				<i class="gz ico-font" style="padding-top: 22px; margin-bottom: 11px;">&#xe603;</i>
+				<h1>工作</h1>
+			</a>
+			<a href="我的.html">
+				<i class="wd ico-font" style="padding-top: 18px; margin-bottom: 11px;">&#xe604;</i>
+				<h1>我的</h1>
+			</a>
+			<a href="javascript:history.go(-1);">
+				<i class="fh ico-font" style="padding-top: 17px; margin-bottom: 9px;">&#xe605;</i>
+				<h1>返回</h1>
+			</a>
+		</div>
+
+
+		<!-- 全局js -->
+		<script src="../js/jquery.min.js?v=2.1.4"></script>
+
+		<!-- Input Mask-->
+		<script src="../js/jasny-bootstrap.min.js"></script>
+
+		<!-- Data picker -->
+		<script src="../js/bootstrap-datepicker.js"></script>
+
+		<!-- Image cropper -->
+		<script src="../js/cropper.min.js"></script>
+
+		<script src="../js/form-advanced-demo.js"></script>
+
+	</body>
+
+</html>

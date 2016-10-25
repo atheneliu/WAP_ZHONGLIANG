@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>环流控温</title>
+
+		<!--时间-->
+		<link href="../css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="../css/jasny-bootstrap.min.css" rel="stylesheet">
+		<link href="../css/datepicker3.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="工作.html"></a>
+			<h1 class="mui-title">环流控温</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view m-b2">
+				<li class="mui-table-view-cell">
+					<div class="form-group m-b" id="data_5">
+						<label>起止时间</label>
+						<div class="input-daterange input-group input-ts" id="datepicker">
+							<input type="text" class="input-sm form-control" name="start" value="2016-9-26" />
+							<span class="input-group-addon">到</span>
+							<input type="text" class="input-sm form-control" name="end" value="2016-9-27" />
+						</div>
+					</div>
+					<div class="mui-pull-left">
+						<label>仓房名称</label>
+						<select>
+							<option>-</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</div>
+					<div class="mui-pull-right">
+						<input type="button" value="查询" class="btn-content">
+					</div>
+				</li>
+				</ul>
+			<script type="text/javascript">
+				window.onload = function(){
+					document.getElementById("datepicker").getElementsByTagName("input").item(1).onclick = function(){
+						$(".datepicker").addClass("input-name");
+					}
+				}
+			</script>
+			<div class="zntf-content">
+				<div class="mui-table-view-cell">
+					<div class="box-width">
+						<div class="box-width3">起始时间：</div>
+						<p>2016-9-28 01:02:03</p>
+					</div>
+					<div class="box-width">
+						<div class="box-width3">结束时间：</div>
+						<p>2016-9-29 01:02:03</p>
+					</div>
+					<div class="box-width">
+						<div class="box-width2">
+							<div class="box-width3">上限温度：</div>
+							<p class="p-r">14.00</p>
+						</div>
+						<div class="box-width2">
+							<div class="box-width3 p-l">下限温度：</div>
+							<p>12.50</p>
+						</div>
+					</div>
+					<div class="box-width">
+						<div class="box-width2">
+							<div class="box-width3">操作人员：</div>
+							<p class="p-r">XX</p>
+						</div>
+						<div class="box-width2">
+							<div class="box-width3 p-l">仓房名称：</div>
+							<p>22号仓房</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="zntf-content">
+				<div class="mui-table-view-cell">
+					<div class="box-width">
+						<div class="box-width3">起始时间：</div>
+						<p>2016-9-28 01:02:03</p>
+					</div>
+					<div class="box-width">
+						<div class="box-width3">结束时间：</div>
+						<p>2016-9-29 01:02:03</p>
+					</div>
+					<div class="box-width">
+						<div class="box-width2">
+							<div class="box-width3">上限温度：</div>
+							<p class="p-r">14.00</p>
+						</div>
+						<div class="box-width2">
+							<div class="box-width3 p-l">下限温度：</div>
+							<p>12.50</p>
+						</div>
+					</div>
+					<div class="box-width">
+						<div class="box-width2">
+							<div class="box-width3">仓房名称：</div>
+							<p class="p-r">22号仓房</p>
+						</div>
+						<div class="box-width2">
+							<div class="box-width3 p-l">操作人员：</div>
+							<p>XX</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<a href="工作.html">
+				<i class="gz ico-font" style="padding-top: 22px; margin-bottom: 11px;">&#xe603;</i>
+				<h1>工作</h1>
+			</a>
+			<a href="我的.html">
+				<i class="wd ico-font" style="padding-top: 18px; margin-bottom: 11px;">&#xe604;</i>
+				<h1>我的</h1>
+			</a>
+			<a href="javascript:history.go(-1);">
+				<i class="fh ico-font" style="padding-top: 17px; margin-bottom: 9px;">&#xe605;</i>
+				<h1>返回</h1>
+			</a>
+		</div>
+
+		<!-- 全局js -->
+		<script src="../js/jquery.min.js?v=2.1.4"></script>
+
+		<!-- Input Mask-->
+		<script src="../js/jasny-bootstrap.min.js"></script>
+
+		<!-- Data picker -->
+		<script src="../js/bootstrap-datepicker.js"></script>
+
+		<!-- Image cropper -->
+		<script src="../js/cropper.min.js"></script>
+
+		<script src="../js/form-advanced-demo.js"></script>
+
+	</body>
+
+</html>

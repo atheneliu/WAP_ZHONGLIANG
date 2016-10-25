@@ -1,0 +1,534 @@
+.bg-white{ background: #fff;}
+.text-primary{color:#39AC69;}
+.text-red{color:#D9534F;}
+li {
+	list-style: none;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	margin:0;padding:0;
+}
+
+body {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	background: #efefef;
+}
+
+label{
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 0;
+	margin-top: 3px;
+}
+
+.m-l{
+	margin-left: 15px;
+}
+
+.m-b{
+	display: table;
+	width: 100%;
+}
+
+.layermbtn{overflow: hidden;}
+/*以上为格式化样式*/
+
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('http://at.alicdn.com/t/font_1475908459_2265673.eot'); /* IE9*/
+	src: url('http://at.alicdn.com/t/font_1475908459_2265673.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('http://at.alicdn.com/t/font_1475908459_2265673.woff') format('woff'), /* chrome、firefox */
+	url('http://at.alicdn.com/t/font_1475908459_2265673.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('http://at.alicdn.com/t/font_1475908459_2265673.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.login-wrapper{
+	background: url(../img/bj.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content {
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo>img {
+	width: 42%;
+	margin-top: 5rem;
+}
+.yhm-box, .mm-box{
+	position: relative;
+	margin: 0 auto;
+	width:76%;
+	height: 45px;
+	margin-bottom: 15px;
+}
+
+.input-ty{
+	border: 2px solid #2f4050;
+	border-radius: 5px;
+	background-color: transparent;
+	width: 100%;
+	height: 45px !important;
+	font-size: 20px;
+	text-indent: 39px;
+	margin-bottom: 15px;
+	padding: 0 !important;
+	border: 2px solid #006f35 !important;
+	background-color: inherit !important;
+}
+
+.yhm,.mm{
+	position: absolute;
+	top: 0;
+	width: 45px;
+	text-align: center;
+	line-height: 45px;
+}
+
+.yhm i{
+	font-size: 21px;
+	font-style: normal;
+	color: #333;
+}
+.mm i{
+	font-size: 23px;
+	font-style: normal;
+	color: #333;
+}
+
+.ico-font{
+	font-family: "iconfont";
+	font-style: normal;
+	display: table;
+	margin: 0 auto;
+}
+
+.dl-box{
+	width: 76%;
+	margin: 0 auto;
+	height: 45px;
+}
+
+.dl-box .input-ts{
+	border-radius: 5px;
+	width: 100%;
+	height: 45px;
+	background-color: #006f35;
+	color:#fff;
+	font-size: 20px;
+	font-family:"微软雅黑";
+	margin-top: 15px;
+	border: 1px solid #006f35;;
+}
+
+.login-wrapper .content .logo span{
+	display: block;
+	font-size: 1.4rem;
+	margin-top: 0.7rem;
+	margin-bottom: 5.2rem;
+	color:#006f35;
+}
+/*以上为登录页样式*/
+
+
+.banner_bj {
+	position: relative;
+}
+
+.banner_bj a:active {
+	color: #FF5050;
+}
+
+.banner_bj a .img1 {
+	position: absolute;
+	bottom: 4px;
+	right: 58px;
+	display: block;
+	width:30%;
+}
+
+.banner_bj a .img2 {
+	display: none;
+}
+
+.banner_bj a:active .img1 {
+	display: none;
+}
+
+.banner_bj a:active .img2 {
+	position: absolute;
+	bottom: 4px;
+	right: 58px;
+	display: block;
+	width:30%;
+}
+
+.banner_bj>img {
+	width: 100%;
+}
+
+.exit>img {
+	margin-bottom: -4px;
+	margin-right: 2px;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 16px;
+	color:#333;
+	padding-top: 6px;
+	margin-bottom: 18px;
+}
+
+.ico_n {
+	width: 100%;
+	display: table;
+	margin-bottom: 90px;
+}
+
+.ico_n-box{
+	margin: 0 auto;
+	width: 93.75%;
+	display: table;
+}
+
+.ico_n .ico_n-box a:active{
+	background-color: #ddd;
+}
+
+.ico_1-box{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px dashed #bbb;
+	border-right: 1px dashed #bbb;
+	display: table;
+}
+
+.ico_n a img{
+	padding-top: 18px;
+	width: 50%;
+}
+
+.bj_a{
+	width: 33.33333%;
+	margin-top: 5px;
+	float:left;
+}
+
+.bj_b{
+	width: 33.33333%;
+	margin-top: -3px;
+	float:left;
+}
+
+.ico_2-box{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px dashed #bbb;
+	display: table;
+}
+
+.ico_3-box{
+	width: 100%;
+	text-align: center;
+	border-right: 1px dashed #bbb;
+	border-bottom: 1px dashed #bbb;
+	display: table;
+}
+
+.ico_4-box{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px dashed #bbb;
+	display: table;
+}
+
+.ico_5-box{
+	 width: 100%;
+	 text-align: center;
+	 border-right: 1px dashed #bbb;
+	 display: table;
+ }
+
+.ico_6-box{
+	width: 100%;
+	text-align: center;
+	display: table;
+}
+/*以上为工作页样式*/
+
+
+/*粮情检测*/
+.input-ts{
+	width: calc(100% - 63px);
+	float: right;
+}
+
+.btn-content{
+	height: 30px !important;
+	line-height: 15px !important;
+	text-align:center !important;
+}
+
+.mui-content a{
+	display: inline-block;
+	width: 100%;
+	color: #000;
+	border-bottom: 1px solid  #c8c7cc;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.mui-content a:active{
+	display: inline-block;
+	width: 100%;
+	color: #000;
+	border-bottom: 1px solid  #c8c7cc;
+	text-decoration: none;
+	background-color: #ddd;
+}
+
+.p-b{
+	margin-top: -5px;
+	padding-bottom: 4px;
+}
+
+.box-width{
+	width: 100%;
+	display: table;
+}
+.box-width2{
+	width: 50%;
+	float: left;
+}
+
+.box-width3{
+	float: left;
+}
+
+.box-width p ,.box-width2 p{
+	font-size: 12px;
+	float: right;
+}
+
+.p-r{
+	padding-right: 6px;
+}
+
+.p-l{
+	padding-left: 6px;
+}
+
+.f-s{
+	font-size: 13px !important;
+	color: #666;
+}
+
+.f-s2{
+	font-size: 13px;
+}
+
+.m-b2{
+	margin-bottom: 6px;
+}
+
+.p-ts{
+	margin-left: 10px;
+	color: #39AC69;
+	font-size: 13px !important;
+}
+
+/*虫害气体*/
+.chqt-tablebox{
+	width: 100%;
+	display: table;
+	background-color: #fff;
+}
+
+.chqt-tablecontent{
+	width: 95%;
+	display: table;
+	margin: 6px auto;;
+}
+
+.chqt-table{
+	width:100%;
+	border-collapse:collapse;
+	font-size:13px;
+}
+
+.chqt-tablebox .chqt-tablecontent .chqt-table th , .chqt-tablebox .chqt-tablecontent .chqt-table td{
+	width:16.66666667%;
+	height:40px;
+	border:1px solid #DDD;
+	text-align: center;
+}
+
+.chqt-tablebox .chqt-tablecontent .chqt-table th{
+	background-color: #f4f3f3;
+	font-weight: normal;
+}
+
+/*智能通风*/
+.zntf-content{
+	width: 100%;
+	display: table;
+	background-color: #fff;
+	border-bottom: 1px solid #DDD;
+}
+
+/*底部导航*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('http://at.alicdn.com/t/font_1475972584_1473405.eot'); /* IE9*/
+	src: url('http://at.alicdn.com/t/font_1475972584_1473405.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('http://at.alicdn.com/t/font_1475972584_1473405.woff') format('woff'), /* chrome、firefox */
+	url('http://at.alicdn.com/t/font_1475972584_1473405.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('http://at.alicdn.com/t/font_1475972584_1473405.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.nav {
+	width:100%;
+	height:88px;
+	margin:0 auto;
+	position:fixed;
+	bottom:0;
+}
+
+.nav a{
+	width: 33.33333%;
+	height: 88px;
+	float: left;
+	background-color: #fcfcfc;
+	text-align: center;
+	border-top:1px solid #d4d4d4;
+}
+
+.nav a:nth-child(1) h1{
+	margin-top: -10px;
+}
+
+.nav a:nth-child(2) h1{
+	margin-top: 2px;
+}
+
+.nav a h1{
+	color: #6f6f6f;
+	font-size: 14px;
+}
+
+.nav a .gz{
+	font-size: 44px;
+	color: #6f6f6f;
+	padding-top: 8px;
+}
+
+.nav a .wd{
+	font-size: 30px;
+	color: #6f6f6f;
+	padding-top: 12px;
+}
+
+.nav a .fh{
+	font-size: 34px;
+	color: #6f6f6f;
+	padding-top: 9px;
+}
+
+/*我的*/
+.tx{
+	width: 30%;
+}
+
+.me-input{
+	width: 100%;
+	height: 40px;
+	border: 0 !important;
+	border-radius: 0 !important;
+	color: #016e35 !important;
+}
+.me-input:active{
+	color: #fff !important;
+	background-color: #009848;
+}
+
+.t-a{
+	text-align: center;
+}
+
+.mui-table-view li h4{
+	margin-top: 10px;
+	color: #333;
+}
+
+/*气象信息*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('http:///at.alicdn.com/t/font_1476081545_074549.eot'); /* IE9*/
+	src: url('http://at.alicdn.com/t/font_1476081545_074549.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('http://at.alicdn.com/t/font_1476081545_074549.woff') format('woff'), /* chrome、firefox */
+	url('http://at.alicdn.com/t/font_1476081545_074549.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('http://at.alicdn.com/t/font_1476081545_074549.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.qxbox-width{
+	width: 100%;
+	display: table;
+}
+.qxbox-width2{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.f-r{
+	float: right;
+}
+
+.qxts{
+	margin-top: 16px;
+	font-size: 12px;
+}
+
+.qxbox-width p ,.qxbox-width2 p{
+	font-size: 12px;
+}
+
+.qxbox-width2 .ico-font{
+	font-size: 28px;
+	color:#444;
+	margin-bottom: 6px;
+}
+
+.wdbox{
+	text-align: center;
+}
+
+.wdts{
+	font-size: 36px;
+	margin-bottom: 30px;
+	margin-top: 16px;
+}
